@@ -29,23 +29,23 @@
                "answer": "Por el axioma de existencia de elemento opuesto, sabemos que $a + (-a) = 0$ y $a \\cdot \\frac{1}{a} = 1$ para cualquier número real $a$. Por lo tanto, $a + (-a) = 0$ y $a \\cdot \\frac{1}{a} = 1$ para cualquier número real $a \\neq 0$."
           },
           {
-               "question":"Usando los axiomas de cuerpo de \\mathbb{{R}}, los teoremas de unicidad de elementos neutros e inversos, demuestre la propiedad $a \\cdot 0 = 0$",
+               "question":"Usando los axiomas de cuerpo de $\\mathbb{{R}}$, los teoremas de unicidad de elementos neutros e inversos, demuestre la propiedad $a \\cdot 0 = 0$",
                "answer":"Dado que $a \\cdot 0 = a \\cdot (0 + 0) = a \\cdot 0 + a \\cdot 0$, entonces $a \\cdot 0 = 0$"
           },
           {
-               "question": "Usando los axiomas de cuerpo de \\mathbb{{R}}, los teoremas de unicidad de elementos neutros e inversos y la propiedad $a \\cdot 0 = 0$, demuestre que: $\\forall a \\neq 0,( -(a^{-1}) + 1 ) \\cdot a = a + (-1)$",
+               "question": "Usando los axiomas de cuerpo de $\\mathbb{{R}}$, los teoremas de unicidad de elementos neutros e inversos y la propiedad $a \\cdot 0 = 0$, demuestre que: $\\forall a \\neq 0,( -(a^{-1}) + 1 ) \\cdot a = a + (-1)$",
                "answer": "Para demostrar la afirmación, se considera la expresión $(-(a^{-1}) + 1) \\cdot a$, y se aplica el axioma distributivo: $(-(a^{-1})) \\cdot a + 1 \\cdot a$. Luego, utilizando la propiedad $(-a)b = -(ab)$, la expresión se simplifica a: $-(a^{-1} \\cdot a) + 1 \\cdot a$. Aplicando el axioma conmutativo y los axiomas de elemento inverso multiplicativo y neutro, obtenemos: $-1 + a$, que finalmente por el axioma conmutativo se simplifica a $a + (-1)$. Para demostrar la propiedad $(-a)b = -(ab)$, se muestra que $ab + (-a)b = 0$ usando el axioma distributivo, el axioma de elemento inverso aditivo, y concluyendo con la propiedad $a \\cdot 0 = 0$."
           },
           {
-               "question": "Demuestre, utilizando los axiomas de cuerpo de \\mathbb{{R}}, que para todo $a \\in \\mathbb{{R}}$, se cumple que $-(-a) = a$.",
+               "question": "Demuestre, utilizando los axiomas de cuerpo de $\\mathbb{{R}}$, que para todo $a \\in \\mathbb{{R}}$, se cumple que $-(-a) = a$.",
                "answer": "Se parte de la definición de elemento opuesto y, a través de manipulaciones algebraicas usando axiomas básicos, se demuestra que el opuesto del opuesto de un número es el mismo número."
           },
           {
-               "question": "Utilizando los axiomas de cuerpo en \\mathbb{{R}} y propiedades previamente demostradas, demuestre que para cualquier $x \\in \\mathbb{{R}}$, $x + x = 2 \\cdot x$.",
+               "question": "Utilizando los axiomas de cuerpo en $\\mathbb{{R}}$ y propiedades previamente demostradas, demuestre que para cualquier $x \\in \\mathbb{{R}}$, $x + x = 2 \\cdot x$.",
                "answer": "Se utiliza el axioma distributivo y la definición de 2 como $1 + 1$, demostrando que $x + x$ es igual a $2 \\cdot x$."
           },
           {
-               "question": "Usando los axiomas de cuerpo de \\mathbb{{R}}, demuestre que para todo $a, b \\in \\mathbb{{R}}$, con $a, b \\neq 0$, se cumple que $(a + b)^{-1} \\neq a^{-1} + b^{-1}$.",
+               "question": "Usando los axiomas de cuerpo de $\\mathbb{{R}}$, demuestre que para todo $a, b \\in \\mathbb{{R}}$, con $a, b \\neq 0$, se cumple que $(a + b)^{-1} \\neq a^{-1} + b^{-1}$.",
                "answer": "Se asume por contradicción que $(a + b)^{-1} = a^{-1} + b^{-1}$. Multiplicando ambos lados por $a(a + b)b$ se obtiene una contradicción, ya que implica $2ab = ab$, lo cual es falso a menos que $a$ o $b$ sean 0, contradiciendo la suposición inicial."
           }
           

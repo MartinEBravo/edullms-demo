@@ -65,10 +65,10 @@ def openai_generate_text(context, prompt, conversation):
 
     conversation.append({"role": "assistant", "content": response})
 
-st.title("Axiomas de Cuerpo")
-st.write(problem)
+
+st.title(course)
 st.sidebar.title("Materia")
-st.sidebar.write(materia)
+st.sidebar.write(content)
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -79,6 +79,17 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
+n = len(questions)
+# Select a question from the list
+buttons = [f"Problema {i+1}" for i in range(n)]
+i = st.selectbox("Selecciona un problema", buttons)
+
+if i:
+    i = int(i.split(" ")[1])
+    question = questions[i-1]["question"]
+    answer = questions[i-1]["answer"]
+    st.write(question)
+
 # React to user input
 if prompt := st.chat_input("Responde acá..."):
 
@@ -87,5 +98,6 @@ if prompt := st.chat_input("Responde acá..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
     # Generate assistant response
+    context = get_context(question, answer)
     st.write_stream(openai_generate_text(context, prompt, st.session_state.messages))
 
